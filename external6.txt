@@ -1,0 +1,19 @@
+echo “1 pipe – output redirect”
+/bin/grep Mars A-Trip-To-Mars.txt | /bin/wc > multigrepwccat.out1.txt
+/bin/cat multigrepwccat.out1.txt
+echo “2 pipes – output redirect”
+/bin/grep Mars A-Trip-To-Mars.txt | /bin/wc | /bin/cat > multigrepwccat.out2.txt /bin/cat multigrepwccat.out2.txt
+echo “3 pipes – output redirect”
+/bin/cat A-Trip-To-Mars.txt | /bin/grep Mars | /bin/wc | /bin/cat > multigrepwccat.out3.txt /bin/cat multigrepwccat.out3.txt
+echo “1 pipe – input redirect”
+/bin/grep Mars < A-Trip-To-Mars.txt | /bin/wc
+echo “2 pipes – output redirect”
+/bin/grep Mars < A-Trip-To-Mars.txt | /bin/wc | /bin/cat
+echo “3 pipes – output redirect”
+/bin/cat < A-Trip-To-Mars.txt | /bin/grep Mars | /bin/wc | /bin/cat
+echo “1 pipe – input & output redirect”
+/bin/grep Mars < A-Trip-To-Mars.txt | /bin/wc > multigrepwccat.inout1.txt /bin/cat multigrepwccat.inout1.txt
+echo “2 pipes – input & output redirect”
+/bin/grep Mars < A-Trip-To-Mars.txt | /bin/wc | /bin/cat > multigrepwccat.inout2.txt /bin/cat multigrepwccat.inout1.txt
+echo “3 pipes – input & output redirect”
+/bin/cat < A-Trip-To-Mars.txt | /bin/grep Mars | /bin/wc | /bin/cat > multigrepwccat.inout3.txt /bin/cat multigrepwccat.inout3.txt

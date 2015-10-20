@@ -1,0 +1,19 @@
+echo "External commands set 5"
+echo " "
+
+/bin/wc A-Trip-To-Mars.txt > wcount2.txt !
+/bin/cat wcount2 > catcount2.txt !
+/bin/cat < wcount2.txt !
+/bin/cat < catcount2.txt > catcat2.txt !
+/bin/cat catcat2.txt !
+
+/bin/ls > ls2.txt !
+/bin/cat ls2.txt !
+/bin/ps > ps2.txt !
+/bin/cat ps2.txt !
+/bin/cat < ls2.txt !
+/bin/cat < ps2.txt !
+/bin/cat < ls2.txt > catls2.txt !
+
+echo " "
+echo "External commands 5 finished"

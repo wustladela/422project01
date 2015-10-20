@@ -1,0 +1,25 @@
+echo "External commands set 3"
+echo " "
+
+/bin/ls -Flas | /bin/cat !
+/bin/ls -Flas | /bin/wc !
+/bin/ls -Flas | grep sish !
+
+/bin/ps -aef | wc !
+/bin/ps -aef | grep root !
+/bin/ps -aef | /bin/cat !
+
+/bin/ls -Flas | /bin/wc | /bin/cat !
+/bin/ps -aef | /bin/grep root | /bin/wc !
+
+/bin/ls -Flas | /bin/grep sish | /bin/cat !
+/bin/ps -aef | /bin/cat | /bin/wc !
+/bin/grep Mars A-Trip-To-Mars.txt | /bin/wc | /bin/cat !
+
+/bin/ls -Flas | /bin/grep sish | /bin/wc | /bin/cat !
+/bin/ps -aef | /bin/grep root | /bin/wc | /bin/cat !
+/bin/cat A-Trip-To-Mars.txt | /bin/grep Mars | /bin/wc | /bin/cat !
+
+
+echo " "
+echo "External commands 3 finished"

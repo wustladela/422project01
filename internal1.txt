@@ -1,0 +1,21 @@
+set foo bar
+set stop go show foo show stop echo “ ” unset stop show stop
+# at this point only variable foo should be shown
+export sky way
+export ground trail
+environ
+echo “ “
+unexport ground
+environ # at this point ground should not be in the environment
+dir
+chdir .
+dir
+chdir ..
+dir
+chdir <your original directory> # should be in directory we executed shell from dir # should show same directory entries as first dir command above
+history # should show entire history list of last 21 items history 3 # should show last 3 from “help” to “history 3”
+history 10 repeat repeat 21
+# should show last 10 from “dir” to “history 3” # should execute the “history 10” command
+# should execute the “history” command
+echo “ “
+echo “Internal commands set 1 finished”

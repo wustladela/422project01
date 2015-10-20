@@ -1,0 +1,6 @@
+echo “testing environment commands”
+echo “test commands search of PATH
+ls # tests command search PATH ls /bin
+ls –Flas /bin ls .
+ls ..
+./showenv # show the complete environment inherited by a command
